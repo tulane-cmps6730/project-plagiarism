@@ -57,13 +57,13 @@ The project will utilize a combination of traditional machine learning algorithm
 Evaluation metrics such as accuracy, precision, recall, F1 score, and receiver operating characteristic (ROC) curve analysis were used to assess the performance of the classifiers and deep learning models. Additionally, qualitative analysis will be conducted to understand the models' ability to detect subtle differences between human-written and AI-generated text. Subsequently, there will be a transformation phase, where upon receiving input identified as AI-generated, the project will aim to iteratively modify the text until it can be classified as human-written. This iterative transformation process will involve techniques such as paraphrasing, grammatical adjustments, and semantic restructuring. The goal is to develop a system capable of refining AI-generated text to pass as human-written, thereby highlighting the malleability and susceptibility of current text classification methods. 
 
 
-\section{Preliminary Experiments & Results}
+\section{Preliminary Experiments \& Results}
 
 In the initial phase of our analysis, we conducted a comprehensive review of the training data,  
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\linewidth]{/Fig1.png}
+  \includegraphics[width=0.8\linewidth]{Fig1.png}
 \end{figure}
 
 Therefore, the dataset at hand was of substantial size and complexity  
@@ -73,7 +73,7 @@ Subsequently, to establish a baseline for performance, we proceeded to train a s
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\linewidth]{/Fig2.png}
+  \includegraphics[width=0.8\linewidth]{Fig2.png}
 \end{figure}
 The results of our evaluation indicate that Logistic Regression emerged as the most effective model, demonstrating the highest levels of accuracy and F1 score among the classifiers tested. This was closely followed by the Extra Trees Classifier, which also exhibited commendable performance metrics.This structured approach not only allowed us to gauge the baseline performance of conventional classifiers on the dataset but also provided invaluable insights into the comparative efficacy of these models in handling the data's inherent complexities. 
 
@@ -81,7 +81,7 @@ We then proceeded to train a Long Short-Term Memory (LSTM) network
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\linewidth]{/Fig3.png}
+  \includegraphics[width=0.8\linewidth]{Fig3.png}
 \end{figure}
 
 The model achieved a test accuracy of 61.5.The test loss stood at 0.766. Furthermore, the model demonstrated a F1 score of 0.6637 
@@ -112,8 +112,13 @@ April 20th: Finalize and publish the repository's README.md file.
 April 25th: Presentation of the project demo 
 April 30th: Delivery of the project presentation. 
 
+\section{References}
+
 \bibliography{references}
 \bibliographystyle{acl_natbib}
-
+\nocite{mitchell2023detectgpt}
+\nocite{bakhtin2020realorfake}
+\nocite{mitrovic2023chatgpt}
+\nocite{he2023mgtbench}
 
 \end{document}
