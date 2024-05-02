@@ -1,42 +1,30 @@
-# CMPS 6730 Sample Project
-
-This repository contains starter code for the final project in CMPS 4730/6730: Natural Language Processing at Tulane University.
-
-The code in this repository will be copied into your team's project repository at the start of class to provide a starting point for your project.
-
-You should edit this file to include a summary of the goals, methods, and conclusions of your project.
-
-The structure of the code supports the following:
-
-- A simple web UI using Flask to support a demo of the project
-- A command-line interface to support running different stages of the project's pipeline
-- The ability to easily reproduce your work on another machine by using virtualenv and providing access to external data sources.
-
-### Using this repository
-
-- At the start of the course, students will be divided into project teams. Each team will receive a copy of this starter code in a new repository. E.g.:
-https://github.com/tulane-cmps6730/project-alpha
-- Each team member will then clone their team repository to their personal computer to work on their project. E.g.: `git clone https://github.com/tulane-cmps6730/project-alpha`
-- See [GettingStarted.md](GettingStarted.md) for instructions on using the starter code.
+# Reddit Post Generator!!!
 
 
-### Contents
+Have you every wanted to be funny , liked ,post stuff on reddit that people actually upvote?
 
-- [docs](docs): template to create slides for project presentations
-- [nlp](nlp): Python project code
-- [notebooks](notebooks): Jupyter notebooks for project development and experimentation
-- [report](report): LaTeX report
-- [tests](tests): unit tests for project code
+Have you ever wanted to dive into an alternate online universe where minor league baseball fans discuss the Cold War or crypto bros talk about parenting struggles? Look no further, our interdimensional reddit post generator can do just that. search any topic And you will find any online community will be sharing their views on it. 
 
-### Background Resources
+Our project  is (or attempted to be) a cutting-edge Reddit Post Generator that can produce subreddit-specific posts that are indistinguishable from those created by actual Reddit users. Our goal is to provide a seamless and engaging user experience by leveraging advanced natural language processing (NLP) techniques.
 
-The following will give you some technical background on the technologies used here:
+The Ambitious Goals we had -
+- Develop a Reddit Post Generator capable of mimicking subreddit-specific styles and content.
+- Enhance user engagement by generating  relevant and stylistically coherent posts.
+- Push the boundaries of NLP technology to create more immersive and authentic user experiences in online communities.
 
-1. Refresh your Python by completing this online tutorial: <https://www.learnpython.org/> (3 hours)
-2. Create a GitHub account at <https://github.com/>
-3. Setup git by following <https://help.github.com/en/articles/set-up-git> (30 minutes)
-4. Learn git by completing the [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github) tutorial, reading the [git handbook](https://guides.github.com/introduction/git-handbook/), then completing the [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) tutorial (1 hour).
-5. Install the Python data science stack from <https://www.anaconda.com/distribution/> . **We will use Python 3** (30 minutes)
-6. Complete the scikit-learn tutorial from <https://www.datacamp.com/community/tutorials/machine-learning-python> (2 hours)
-7. Understand how python packages work by going through the [Python Packaging User Guide](https://packaging.python.org/tutorials/) (you can skip the "Creating Documentation" section). (1 hour)
-8. Complete Part 1 of the [Flask tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world), which is the library we will use for making a web demo for your project.
+The Methods we used- 
+
+- Utilize the ALL POWERFUL Mistral 7B language model fine-tuned on a curated dataset of ten distinct, text-based subreddits.
+- Experiment with prompt-based and text completion-based generation methods to optimize style emulation.
+- Evaluate the performance of the model using BLEU scores and human assessments to gauge style accuracy.
+
+Conclusion
+
+Although we did not fully reach our ambitious goals , this project will allow you to enter a Reddit from an alternate reality find-tuned with all the posts from the interesting dark underbelly that is Reddit. Look no further for laughs , nonsensical jokes and sometimes not politically correct statements. Only the brave enter !!!
+
+
+
+For more details, check out the full project report in the  directory.
+For Screenshots of our demo, check out the screenshots in our demo.
+
+
