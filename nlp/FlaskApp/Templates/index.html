@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Style Text Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Reddit Post Generator</h1>
+            <h2>"Welcome to the Reddit Post Generator – where creativity meets convenience! Ever wanted to effortlessly conjure up engaging Reddit posts? Now you can! Simply enter a subreddit and topic below, and watch as our innovative tool crafts captivating content in seconds. Try it out and unleash your inner wordsmith today!"</h2>
+            <div id="inputFields">
+                <div class="input-group">
+                    <select id="subredditInput" class="input-field">
+                        <option value="" disabled selected>Select Subreddit</option>
+                        <option value="CMV">CMV</option>
+                        <option value="AITAH">AITAH</option>
+                        <option value="AMA">AMA</option>
+                        <option value="No sleep">No sleep</option>
+                        <option value="qanon casualties">qanon casualties</option>
+                        <option value="bipolar">bipolar</option>
+                        <option value="Ask women over 30">Ask women over 30</option>
+                        <option value="Atheism">Atheism</option>
+                        <option value="Jokes">Jokes</option>
+                        <option value="TIFU">TIFU</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="topicInput" class="input-field" placeholder="Enter Topic">
+                </div>
+            </div>
+            <button id="submitBtn" class="btn">Submit</button>
+            <p>Note: Powered by proprietary technology developed in collaboration with the brilliant Dr. Aron Culotta</p>
+        </div>
+        <div id="contents">
+            <div class="post">
+                <div class="updownvote">
+                    <img src="upvote.png" alt="upvote" class="arrows">
+                    <p class="postTheme postTextSize">120</p>
+                    <img src="downvote.png" alt="downvote" class="arrows">
+                </div>
+                <div class="postMain">
+                    <div class="postMeta">
+                        <img src="usericon.png" alt="user">
+                        <p class="postTheme postTextSize">Posted by u/rsslgrg 12 hours ago</p>
+                    </div>
+                    <div class="postTitle textTheme">Ibr</div>
+                    <p class="textTheme">
+
+
+
+
+
+
+
+
+
+                         bekannt, dass ich ein 
+                        schlechter Schüler war.
+                        
+                        
+                        
+                        
+                        </p>
+                    <!-- Post Reactions -->
+                    <div class="postStats postTheme postTextSize">
+                        <i class="fas fa-comment-alt postTheme postStatsIcons"></i>
+                        3 Comments &nbsp;
+                        <div class="mediaContainer">
+                            <i class="fas fa-gift postTheme postStatsIcons"></i>
+                            Give Award &nbsp;
+                            <i class="fas fa-share postTheme postStatsIcons"></i>
+                            Share &nbsp;
+                            <i class="fas fa-bookmark postTheme postStatsIcons"></i>
+                            Save &nbsp;
+                            <i class="fas fa-ban postTheme postStatsIcons"></i>
+                            Hide &nbsp;
+                            <i class="fas fa-flag postTheme postStatsIcons"></i>
+                            Report &nbsp;
+                        </div>
+                    </div>
+
+                    <!-- Post Sign Up and Login Buttons -->
+                    <div class="postLogin postTheme">
+                        <div>Log in or sign up to leave a comment</div>
+                        <div>
+                            <button type="button" class="btn">LOG IN</button>
+                            <button type="button" class="btn" id="signUpBtn">SIGN UP</button>
+                        </div>
+                    </div>
+
+                    <!-- Post Sort By Options -->
+                    <div class="postSortBy postTheme postTextSize">
+                        SORT BY &emsp;
+                        <div class="postSortByOptions">Best</div>
+                        <i class="fas fa-caret-down postTheme postStatsIcons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript for randomize button and other functionalities
+
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            var subreddit = document.getElementById("subredditInput").value;
+            var topic = document.getElementById("topicInput").value;
+            // Do something with the selected subreddit and topic
+            console.log("Selected Subreddit:", subreddit);
+            console.log("Entered Topic:", topic);
+            var prompt = `Create a title for the '${subreddit}' subreddit and '${topic}' topic.`;
+            console.log(prompt);
+        });
+    </script>
+</body>
+</html>
